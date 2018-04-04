@@ -6,13 +6,14 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-@font-face { font-family: ekkamai; src: url('assets/EkkamaiStandard-Light.ttf'); }
-@font-face { font-family: cbold; src: url('assets/Cloud-Bold.otf'); }
+@font-face { font-family: ekkamai; src: url('assets/EkkamaiStandard-Light.ttf'); } 
+@font-face { font-family: clight; src: url('assets/Cloud-Light.otf'); } 
+@font-face { font-family: cbold; src: url('assets/Cloud-Bold.otf'); } 
 @font-face { font-family: bangna; src: url('assets/bangna-new.ttf'); } 
-@font-face { font-family: mathilde; src: url('assets/mathilde.otf'); } 
-a {font-family: "Raleway", sans-serif}
-h2,h1 { font-family: ekkamai }
-body { font-family: ekkamai }
+      h2,body {
+         font-family: ekkamai
+      }
+h1{font-family: bangna}
 body, html {height: 100%}
 p {line-height: 2}
 .bgimg, .bgimg2 {
@@ -22,7 +23,6 @@ p {line-height: 2}
 }
 .bgimg {background-image: url("img/3.jpg")}
 .bgimg2 {background-image: url("img/3.jpg")}
-
 #map {
         height: 400px;
         width: 100%;
@@ -190,7 +190,6 @@ p {line-height: 2}
 </div>
 
 <script>
-
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
@@ -199,7 +198,6 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
   initMap()
 }
-
 function initMap() {
         var uluru = {lat: 13.7456764, lng: 100.5496483};
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -211,7 +209,6 @@ function initMap() {
           map: map
         });
       }
-
 </script>
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCeFuo0IdaDji89MsWKVNy3z_mNUuesg8&callback=initMap">
